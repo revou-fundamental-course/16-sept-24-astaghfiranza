@@ -1,0 +1,296 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+p {
+  font-size: 16px;
+}
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.1px solid lightgray;
+  padding: 10px;
+}
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 0.1px solid lightgray;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
+}
+
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links ul li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/*  */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  padding: 15%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../public/hero-image.jpg");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  color: white;
+}
+
+.about-us,
+.vision {
+  width: 100%;
+  /* max-height: 480px; */
+  /* background-color: antiquewhite; */
+  padding: 10% 8%;
+  gap: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid black; */
+}
+
+.about-img,
+.vision-img {
+  flex: 25%;
+  width: 30%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+.about-text,
+.vision-text {
+  flex: 25%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid black; */
+}
+
+.hq {
+  width: 100%;
+  padding: 4% 8%;
+  gap: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hq-card-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.hq-card {
+  /* width: 20%; */
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.hq-card > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.message-us {
+  width: 100%;
+  padding: 4% 8%;
+  gap: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 100%;
+  gap: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gender {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.gender > input {
+  height: 20px;
+}
+.gender > label {
+  width: 100%;
+}
+.form-input {
+  width: 40vw;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  /* border: 1px solid black; */
+}
+.form-result {
+  width: 50vw;
+  /* border: 1px solid black; */
+}
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links ul li {
+    margin: 15px 0;
+  }
+
+  .nav-links ul li a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  /*  */
+  .hero {
+    text-align: center;
+  }
+
+  .about-us,
+  .vision {
+    text-align: center;
+    flex-direction: column;
+    padding: 15%;
+  }
+  .about-img,
+  .vision-img {
+    flex: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .about-text,
+  .vision-text {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .hq {
+    text-align: center;
+  }
+  .hq-card-row {
+    flex-direction: column;
+  }
+
+  .message-us {
+    padding: 5% 1%;
+    /* border: 1px solid black; */
+  }
+  .form {
+    flex-direction: column;
+    /* border: 1px solid black; */
+  }
+  .form-input {
+    width: 100%;
+    padding: 0px;
+    /* border: 1px solid black; */
+  }
+}

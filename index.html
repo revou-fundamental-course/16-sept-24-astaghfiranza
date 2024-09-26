@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astaghfiranza Project RevoU</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">LOGO</a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#hq">Headquarters</a></li>
+          <li><a href="#message-us">Contact</a></li>
+        </ul>
+      </div>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div class="container">
+      <div class="hero" id="hero">
+        <h2 id="name">Hello, <span id="displayNameHero">User</span></h2>
+        <h1>Unlock Your Digital Future</h1>
+        <p>
+          We are a Bandung-based IT consulting company, dedicated to driving
+          innovation and solving complex challenges for businesses. From digital
+          transformation to custom software development, we provide tailored
+          solutions that empower your growth and success in the digital era.
+        </p>
+      </div>
+      <div class="about-us" id="about-us">
+        <img class="about-img" src="public/about-image.jpg" alt="About Us" />
+        <div class="about-text">
+          <h1>About Us</h1>
+          <p>
+            Founded in Bandung, we are an IT consulting firm committed to
+            delivering cutting-edge solutions that address the evolving needs of
+            modern businesses. With a strong focus on collaboration, innovation,
+            and technological expertise, our team of professionals brings years
+            of experience in helping companies streamline operations, enhance
+            productivity, and achieve their business goals. Whether it's IT
+            infrastructure, software development, or strategic digital
+            consultancy, we are here to guide you through every step of your
+            journey toward digital excellence.
+          </p>
+        </div>
+      </div>
+      <div class="vision" id="vision" style="background-color: #fafafa">
+        <div class="vision-text">
+          <h1>Vision & Mission</h1>
+          <p>
+            To become the leading IT consulting partner, transforming businesses
+            through innovative and sustainable technology solutions that drive
+            growth and success on a global scale.
+          </p>
+          <ul>
+            <li>
+              Empower businesses with tailored digital solutions that enhance
+              operational efficiency and competitiveness.
+            </li>
+            <li>
+              Drive innovation by leveraging the latest technologies to create
+              scalable and future-proof IT infrastructure.
+            </li>
+            <li>
+              Foster long-term partnerships built on trust, transparency, and a
+              shared vision of digital growth.
+            </li>
+            <li>
+              Provide exceptional customer service, ensuring seamless
+              integration and support throughout the digital transformation
+              journey.
+            </li>
+            <li>
+              Promote sustainable practices by encouraging eco-friendly and
+              responsible use of technology to help businesses minimize their
+              environmental impact.
+            </li>
+          </ul>
+        </div>
+        <img class="vision-img" src="public/vision-image.jpg" alt="Vision" />
+      </div>
+      <div class="hq" id="hq">
+        <h2>Our Headquarters</h2>
+        <div class="hq-card-row">
+          <div class="hq-card">
+            <img src="public/bandung.jpg" alt="Bandung" />
+            <h3>Bandung</h3>
+          </div>
+          <div class="hq-card">
+            <img src="public/san-diego.webp" alt="San Diego" />
+            <h3>San Diego</h3>
+          </div>
+          <div class="hq-card">
+            <img src="public/kyoto.jpeg" alt="Kyoto" />
+            <h3>Kyoto</h3>
+          </div>
+          <div class="hq-card">
+            <img src="public/amsterdam.jpg" alt="Amsterdam" />
+            <h3>Amsterdam</h3>
+          </div>
+          <div class="hq-card">
+            <img src="public/jeddah.jpg" alt="Jeddah" />
+            <h3>Jeddah</h3>
+          </div>
+        </div>
+      </div>
+      <div class="message-us" id="message-us" style="background-color: #fafafa">
+        <h2>Messages Us</h2>
+        <div class="form">
+          <form id="userForm">
+            <div class="form-input">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="nameInput"
+                name="name"
+                placeholder="Your name.."
+                required
+              />
+
+              <label for="birthday">Tanggal Lahir</label>
+              <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                placeholder="Your birthday.."
+                required
+              />
+
+              <p>Jenis Kelamin</p>
+              <div class="gender">
+                <input
+                  type="radio"
+                  id="men"
+                  name="gender"
+                  value="men"
+                  required
+                />
+                <label for="men">Laki-laki</label>
+                <input
+                  type="radio"
+                  id="women"
+                  name="gender"
+                  value="women"
+                  required
+                />
+                <label for="women">Perempuan</label>
+              </div>
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write something.."
+                style="height: 200px"
+                required
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+          <div class="form-result">
+            <p><b>Current Time: </b><span id="displayTime"></span></p>
+            <p><b>Name: </b><span id="displayName"></span></p>
+            <p><b>Tanggal Lahir: </b><span id="displayBirthday"></span></p>
+            <p><b>Jenis Kelamin: </b><span id="displayGender"></span></p>
+            <p><b>Message: </b><span id="displayMessage"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>created by Muhammad Aththar Astaghfiranza</p>
+        <p>RevoU Mini Course Software Engineering Project</p>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
